@@ -18,7 +18,7 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
-    
+
 
     <!-- mobile specific metas
     ================================================== -->
@@ -32,7 +32,6 @@
 
     <!-- favicons
     ================================================== -->
-    <link rel="shortcut icon" href="https://www.favicon.cc/logo3d/377601.png" />
     @livewireStyles
 </head>
 
@@ -65,36 +64,36 @@
             </div>
         </div>
 
-<center>
-        <div class="row s-intro__content">
-            <div class="column">
+        <center>
+            <div class="row s-intro__content">
+                <div class="column">
 
-                <div class="text-pretitle">
-                    The Wedding
-                </div>
+                    <div class="text-pretitle">
+                        The Wedding
+                    </div>
 
-                <h1 class="text-huge-title">
-                    Kiki Khoerudin (Kinoy) 
-                    <br> & <br>
-                     Iis Zaenabiah (Meimey)
-                </h1>
+                    <h1 class="text-huge-title">
+                        Kiki Khoerudin (Kinoy)
+                        <br> & <br>
+                        Iis Zaenabiah (Meimey)
+                    </h1>
 
-                <div class="text-pretitle">
-                    Dear: <span style="text-color:white; font-weight: bold;">{{ $to }}</span>
-                    <br>Kami mengundang Anda ke pesta pernikahan
-                    <br>
-                    <br>
-                    <button href="#hidden" class="btn--stroke2 btn--small smoothscroll"
-                        style="text-color:white !important;">
-                        Open Invitation
-                    </button>
-                    {{-- <a href="#hidden" class="btn btn--primary smoothscroll">Open Invitation</a> --}}
-                    {{-- <x-markdown>
+                    <div class="text-pretitle">
+                        Dear: <span style="text-color:white; font-weight: bold;">{{ $to }}</span>
+                        <br>Kami mengundang Anda ke pesta pernikahan
+                        <br>
+                        <br>
+                        <button href="#hidden" class="btn--stroke2 btn--small smoothscroll"
+                            style="text-color:white !important;">
+                            Open Invitation
+                        </button>
+                        {{-- <a href="#hidden" class="btn btn--primary smoothscroll">Open Invitation</a> --}}
+                        {{-- <x-markdown>
                     {{ $item->note }}
                     </x-markdown> --}}
-                </div>
+                    </div>
 
-                {{-- <div class="s-intro__content-bottom">
+                    {{-- <div class="s-intro__content-bottom">
 
                     <div class="s-intro__content-bottom-block">
                         <h5>Save the date</h5>
@@ -128,15 +127,15 @@
 
                 </div> --}}
 
-            </div>
-        </div> <!-- s-intro__content -->
+                </div>
+            </div> <!-- s-intro__content -->
 
-        <div class="s-intro__scroll">
-            <a href="#hidden" class="smoothscroll">
-                Scroll For More
-            </a>
-        </div> <!-- s-intro__scroll -->
-<center>
+            <div class="s-intro__scroll">
+                <a href="#hidden" class="smoothscroll">
+                    Scroll For More
+                </a>
+            </div> <!-- s-intro__scroll -->
+            <center>
     </section> <!-- end s-intro -->
 
 
@@ -179,11 +178,6 @@
                                 <span>Wishes</span>
                             </a>
                         </li>
-                        <li>
-                            <a href="#tab-gift">
-                                <span>Gift</span>
-                            </a>
-                        </li>
                     </ul>
                 </nav> <!-- end tab-nav -->
 
@@ -194,36 +188,55 @@
 
                         <div class="row">
                             <div class="column">
-
                                 <div class="row">
-                                    @foreach ($bride as $item)
-                                        <div class="column lg-6 tab-12">
-                                            <p class="name-bride">{{ $item->name }}</p>
-                                            <a href="{{ $item->instagram }}" target="_blank">
-                                                <p class="desc-bride">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20"
-                                                        height="20" fill="currentColor" class="bi bi-instagram"
-                                                        viewBox="0 0 16 16">
-                                                        <path
-                                                            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z">
-                                                        </path>
-                                                    </svg>
-                                                    <b>instagram</b>
-                                                </p>
-                                            </a>
-                                            <br>
-                                            <img src="{{ url('/storage/') }}/{{ $item->photo }}"
-                                                style="height:500px; widht:auto;">
+                                    <div class="column lg-6 tab-12">
+                                        <p class="name-bride">Kiki Khoerudin</p>
+                                        <a href="instagram" target="_blank">
                                             <p class="desc-bride">
-                                                {{ $item->child }}
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z">
+                                                    </path>
+                                                </svg>
+                                                <b>instagram</b>
                                             </p>
-                                            <p>
-                                                {{ $item->name_mother }}
-                                                &<br>
-                                                {{ $item->name_father }}
+                                        </a>
+                                        <br>
+                                        <img src="" style="height:500px; widht:auto;">
+                                        <p class="desc-bride">
+                                            Putra pertama dari
+                                        </p>
+                                        <p>
+                                            Supartini
+                                            &<br>
+                                            Agus Sumarna
+                                        </p>
+                                    </div>
+                                    <div class="column lg-6 tab-12">
+                                        <p class="name-bride">Iis Zaenabiah</p>
+                                        <a href="instagram" target="_blank">
+                                            <p class="desc-bride">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z">
+                                                    </path>
+                                                </svg>
+                                                <b>instagram</b>
                                             </p>
-                                        </div>
-                                    @endforeach
+                                        </a>
+                                        <br>
+                                        <img src="" style="height:500px; widht:auto;">
+                                        <p class="desc-bride">
+                                            Putra pertama dari
+                                        </p>
+                                        <p>
+                                            Supartini
+                                            &<br>
+                                            Agus Sumarna
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -303,8 +316,8 @@
 
                             <div class="row">
                                 <div class="col-sm-6 col-md-4">
-                                    <a class="lightbox" href="{{ url('/storage/') }}/2.JPG">
-                                        <img src="{{ url('/storage/') }}/2.JPG">
+                                    <a class="lightbox loader" href="{{ asset('assets/img/hero-1.JPG') }}">
+                                        <img src="{{ asset('assets/img/hero-1.JPG') }}">
                                     </a>
                                 </div>
                                 <div class="col-sm-6 col-md-4">
@@ -422,10 +435,10 @@
                 <footer>
                     <div class="ss-copyright">
                         @foreach ($wedding as $item)
-                            <span>© Copyright {{ $item->name }} {{ date('Y') }}</span>
+                            <span>© Copyright {{ $item->name }} 2024</span>
                         @endforeach
-                        <span>Developed by <a href="https://wa.me/6287823327307"
-                                target="_blank">danixsofyan</a></span>
+                        <span>Developed by <a href="https://wa.me/62895334905206"
+                                target="_blank">Rizalfirziawans</a></span>
                     </div>
                 </footer>
 

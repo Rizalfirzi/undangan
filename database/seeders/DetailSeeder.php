@@ -18,7 +18,7 @@ class DetailSeeder extends Seeder
         Detail::create([
             'wedding_id'        => 1,
             'type'              => 'Akad',
-            'date'              => '2022-11-05 08:00:00',
+            'date'              => '2022-11-05 09:00:00',
             'address'           => 'Gedung Mayor Jendral Ar Moer',
             'maps'              => 'https://goo.gl/maps/5uiLbVMak7FZ5edz6',
             'created_at'        => now(),
@@ -28,9 +28,9 @@ class DetailSeeder extends Seeder
         Detail::create([
             'wedding_id'        => 1,
             'type'              => 'Resepsi',
-            'date'              => '2022-11-05 10:00:00',
-            'address'           => 'Gedung Mayor Jendral Ar Moer',
-            'maps'              => 'https://goo.gl/maps/5uiLbVMak7FZ5edz6',
+            'date'              => '2022-11-05 09:00:00',
+            'address'           => 'Kp.Babakan Rt.01/09 Des.Rancamanyar Kec.Baleendah Kab.Bandung Jawa Barat',
+            'maps'              => 'https://maps.app.goo.gl/WKqtCH3T9CHHhifX9',
             'created_at'        => now(),
             'updated_at'        => now()
         ]);
