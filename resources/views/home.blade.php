@@ -37,7 +37,10 @@
 
 <body id="top" class="ss-preload theme-slides">
 
-
+<audio autoplay loop>
+        <source src="{{ asset('assets/img/sound.mp3') }}" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
     <!-- preloader
     ================================================== -->
     <div id="preloader">
@@ -56,11 +59,11 @@
         <div class="s-intro__slider swiper-container">
             <div class="swiper-wrapper">
                 <div class="s-intro__slide swiper-slide"
-                    style="background-image: url('{{ asset('assets/img/hero-1.JPG') }}');"></div>
+                    style="background-image: url('{{ asset('assets/img/poto-1.png') }}');"></div>
                 <div class="bg-opacity-50 s-intro__slide swiper-slide"
-                    style="background-image: url('{{ asset('assets/img/hero-2.JPG') }}');"></div>
+                    style="background-image: url('{{ asset('assets/img/poto-2.png') }}');"></div>
                 <div class="s-intro__slide swiper-slide bg-opacity-10"
-                    style="background-image: url('{{ asset('assets/img/hero-3.JPG') }}');"></div>
+                    style="background-image: url('{{ asset('assets/img/poto-3.png') }}');"></div>
             </div>
         </div>
 
@@ -191,7 +194,7 @@
                                 <div class="row">
                                     <div class="column lg-6 tab-12">
                                         <p class="name-bride">Kiki Khoerudin</p>
-                                        <a href="instagram" target="_blank">
+                                        <a href="" target="_blank">
                                             <p class="desc-bride">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                                                     fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
@@ -203,7 +206,7 @@
                                             </p>
                                         </a>
                                         <br>
-                                        <img src="" style="height:500px; widht:auto;">
+                                        <img src="{{ asset('assets/img/kiki.png') }}" style="height:500px; widht:auto;">
                                         <p class="desc-bride">
                                             Putra pertama dari
                                         </p>
@@ -215,7 +218,7 @@
                                     </div>
                                     <div class="column lg-6 tab-12">
                                         <p class="name-bride">Iis Zaenabiah</p>
-                                        <a href="instagram" target="_blank">
+                                        <a href="https://instagram.com/memey29481?igshid=MzMyNGUyNmU2YQ==" target="_blank">
                                             <p class="desc-bride">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                                                     fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
@@ -227,14 +230,14 @@
                                             </p>
                                         </a>
                                         <br>
-                                        <img src="" style="height:500px; widht:auto;">
+                                        <img src="{{ asset('assets/img/iis.png') }}" style="height:500px; widht:auto;">
                                         <p class="desc-bride">
                                             Putra pertama dari
                                         </p>
                                         <p>
-                                            Supartini
+                                            Aisyah
                                             &<br>
-                                            Agus Sumarna
+                                            Oding
                                         </p>
                                     </div>
                                 </div>
