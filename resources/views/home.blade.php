@@ -15,6 +15,7 @@
     <link rel="shortcut icon" href="{{ asset('assets/img/logo.png') }}" />
     <!--begin::Fonts-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
@@ -33,22 +34,62 @@
     <!-- favicons
     ================================================== -->
     @livewireStyles
+    <style>
+        .comment-container {
+            width: 100%;
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 10px;
+            background-color: #f5f5f5;
+        }
+
+        .comment {
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #fff;
+        }
+
+        .user {
+            font-weight: bold;
+            color: #0073e6;
+            font-size: 14px;
+        }
+
+        .comment-text {
+            margin-top: 5px;
+            font-size: 12px;
+        }
+
+        .love-button {
+            cursor: pointer;
+            background: none;
+            border: none;
+            font-size: 16px;
+            color: #ff3838; /* Warna merah untuk "like" */
+        }
+
+        .like-count {
+            font-size: 12px;
+            color: #555; /* Warna abu-abu untuk jumlah "like" */
+        }
+    </style>
 </head>
 
 <body id="top" class="ss-preload theme-slides">
 
-<audio autoplay loop>
+    <audio autoplay loop>
         <source src="{{ asset('assets/img/sound.mp3') }}" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
     <!-- preloader
     ================================================== -->
     <div id="preloader">
-        <div id="loader" class="dots-fade">
+        {{-- <div id="loader" class="dots-fade">
             <div></div>
             <div></div>
             <div></div>
-        </div>
+        </div> --}}
     </div>
 
 
@@ -95,40 +136,33 @@
                     {{ $item->note }}
                     </x-markdown> --}}
                     </div>
+                    <div class="s-intro__content-bottom center">
 
-                    {{-- <div class="s-intro__content-bottom">
+                        <div class="s-intro__content-bottom-block">
+                            <h5>Save the date</h5>
 
-                    <div class="s-intro__content-bottom-block">
-                        <h5>Save the date</h5>
+                            <div class="counter">
+                                <div class="counter__time">
+                                    <span class="ss-days">000</span>
+                                    <span>D</span>
+                                </div>
+                                <div class="counter__time">
+                                    <span class="ss-hours">00</span>
+                                    <span>H</span>
+                                </div>
+                                <div class="counter__time minutes">
+                                    <span class="ss-minutes">00</span>
+                                    <span>M</span>
+                                </div>
+                                <div class="counter__time">
+                                    <span class="ss-seconds">00</span>
+                                    <span>S</span>
+                                </div>
+                            </div> <!-- end counter -->
 
-                        <div class="counter">
-                            <div class="counter__time">
-                                <span class="ss-days">000</span>
-                                <span>D</span>
-                            </div>
-                            <div class="counter__time">
-                                <span class="ss-hours">00</span>
-                                <span>H</span>
-                            </div>
-                            <div class="counter__time minutes">
-                                <span class="ss-minutes">00</span>
-                                <span>M</span>
-                            </div>
-                            <div class="counter__time">
-                                <span class="ss-seconds">00</span>
-                                <span>S</span>
-                            </div>
-                        </div> <!-- end counter -->
+                        </div> <!-- end s-intro-content__bottom-block -->
 
-                    </div> <!-- end s-intro-content__bottom-block -->
-
-                    <div class="s-intro__content-bottom-block">
-
-
-
-                    </div> <!-- end s-intro-content__bottom-block -->
-
-                </div> --}}
+                    </div>
 
                 </div>
             </div> <!-- s-intro__content -->
@@ -181,6 +215,11 @@
                                 <span>Wishes</span>
                             </a>
                         </li>
+                        <li>
+                            <a href="#tab-gift">
+                                <span>Gift</span>
+                            </a>
+                        </li>
                     </ul>
                 </nav> <!-- end tab-nav -->
 
@@ -192,7 +231,7 @@
                         <div class="row">
                             <div class="column">
                                 <div class="row">
-                                    <div class="column lg-6 tab-12">
+                                    <div class="column lg-5 tab-12">
                                         <p class="name-bride">Kiki Khoerudin</p>
                                         <a href="" target="_blank">
                                             <p class="desc-bride">
@@ -206,7 +245,8 @@
                                             </p>
                                         </a>
                                         <br>
-                                        <img src="{{ asset('assets/img/kiki.png') }}" style="height:500px; widht:auto;">
+                                        <img src="{{ asset('assets/img/kiki.png') }}"
+                                            style="height:500px; widht:auto;">
                                         <p class="desc-bride">
                                             Putra pertama dari
                                         </p>
@@ -216,9 +256,13 @@
                                             Agus Sumarna
                                         </p>
                                     </div>
-                                    <div class="column lg-6 tab-12">
+                                    <div class="column lg-2 tab-12">
+                                        &
+                                    </div>
+                                    <div class="column lg-5 tab-12">
                                         <p class="name-bride">Iis Zaenabiah</p>
-                                        <a href="https://instagram.com/memey29481?igshid=MzMyNGUyNmU2YQ==" target="_blank">
+                                        <a href="https://instagram.com/memey29481?igshid=MzMyNGUyNmU2YQ=="
+                                            target="_blank">
                                             <p class="desc-bride">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                                                     fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
@@ -230,7 +274,8 @@
                                             </p>
                                         </a>
                                         <br>
-                                        <img src="{{ asset('assets/img/iis.png') }}" style="height:500px; widht:auto;">
+                                        <img src="{{ asset('assets/img/iis.png') }}"
+                                            style="height:500px; widht:auto;">
                                         <p class="desc-bride">
                                             Putra pertama dari
                                         </p>
@@ -317,7 +362,7 @@
                     <div id="tab-gallery" class="tab-content__item">
                         <div class="tz-gallery">
 
-                            <div class="row">
+                            {{-- <div class="row">
                                 <div class="col-sm-6 col-md-4">
                                     <a class="lightbox loader" href="{{ asset('assets/img/hero-1.JPG') }}">
                                         <img src="{{ asset('assets/img/hero-1.JPG') }}">
@@ -348,7 +393,7 @@
                                         <img src="{{ url('/storage/') }}/1.JPG" alt="Traffic">
                                     </a>
                                 </div>
-                            </div>
+                            </div> --}}
 
                             <div class="embed-responsive embed-responsive-16by9">
                                 <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/cUvfbmgQRj8"
@@ -465,6 +510,7 @@
 
     <!-- Java Script
     ================================================== -->
+    <script src="vendor/livewire/livewire.js"></script>
     <script src="assets/undangan/js/plugins.js"></script>
     <script src="assets/undangan/js/main.js"></script>
     <Script>

@@ -1,9 +1,8 @@
-<div>
+<div class="comment-container">
     @foreach ($wish as $item)
-    <div class="alert-box alert-box--notice">
-        <span><b>{{ $item->name }}</span></b>
-        <br>
-        <span>{{ $item->comment }}</span>
+    <div class="comment">
+        <div class="user">{{ $item->name }}</div>
+        <div class="comment-text">{{ $item->comment }}</div>
     </div>
     @endforeach
 </div>
